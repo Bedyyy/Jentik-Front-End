@@ -297,3 +297,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+function toggleDescription(element) {
+  const description = element.querySelector('.description');
+  if (description.style.display === 'none') {
+      description.style.display = 'flex';
+  } else {
+      description.style.display = 'none';
+  }
+}
+
+function openBank(evt, bankName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("bank");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+  }
+  document.getElementById(bankName).style.display = "block";
+  evt.currentTarget.className += " w3-yellow";
+}
