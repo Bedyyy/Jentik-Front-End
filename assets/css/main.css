@@ -1059,6 +1059,39 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Search
+--------------------------------------------------------------*/
+.btn-custom-secondary {
+  background-color: rgb(255, 255, 0);
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-custom-secondary:hover {
+  background-color: darken(var(--color-secondary), 10%); /* Slightly darker shade for hover */
+  border-color: darken(var(--color-secondary), 10%);
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+#search-bar .input-group {
+  width: 100%;
+}
+
+#search-bar .form-control {
+  height: 60px; /* Adjust height as needed */
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+#search-bar .btn {
+  height: 60px; /* Adjust height as needed */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
 .featured-services .service-item {
@@ -1565,6 +1598,10 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services {
+  margin-top: 80px;
+}
+
 .services .img {
   border-radius: 8px;
   overflow: hidden;
