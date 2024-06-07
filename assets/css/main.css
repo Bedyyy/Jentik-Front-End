@@ -548,6 +548,7 @@ section {
     background: rgba(var(--color-secondary-rgb), 0.8);
     z-index: 9996;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -3050,6 +3051,35 @@ section {
 .blog .blog-pagination li.active a,
 .blog .blog-pagination li:hover a {
   color: var(--color-white);
+}
+
+/*--------------------------------------------------------------
+# Beasiswa Info
+--------------------------------------------------------------*/
+
+.btn-custom-info {
+  background-color: cadetblue;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-custom-info:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
